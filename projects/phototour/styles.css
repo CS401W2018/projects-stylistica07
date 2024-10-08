@@ -69,7 +69,6 @@ header
 body {
     background-image: url('bg.avif'); /* Repeating background image */
     background-repeat: repeat; /* Repeats in both x and y directions */
-    background-size: 100% 100%; /* Stretches the background to fill the entire page */
     background-position: top center; /* Aligns the background to the top center */
     height: 100vh; /* Ensures the background covers the full viewport height */
     margin: 0; /* Removes any default body margin */
