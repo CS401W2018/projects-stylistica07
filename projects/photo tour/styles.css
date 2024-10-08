@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Nav */
+header {
+    background-color: #466648;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a.current {
+    background-color: #438a47;
+}
+
+/* Custom Bullet Points */
+ul.custom-bullets {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.custom-bullets li {
+    background-image: url('20.png'); /* Add your custom bullet image here */
+    background-repeat: no-repeat;
+    background-position: 0 0.2em;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+/* Non-repeating background for a section, positioned to the right */
+header
+ {
+    background-position:bottom left;
+    background-repeat: no-repeat;
+    background-image: url('decor.png');
+    height: 150px;
+
+}
+
+
+/* Repeating background for the body in x or y direction */
+body {
+    background-image: url('bg.avif'); /* Repeating background image */
+    background-repeat: repeat; /* Repeats in both x and y directions */
+    background-size: 100% 100%; /* Stretches the background to fill the entire page */
+    background-position: top center; /* Aligns the background to the top center */
+    height: 100vh; /* Ensures the background covers the full viewport height */
+    margin: 0; /* Removes any default body margin */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
