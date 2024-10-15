@@ -1,0 +1,135 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background like Mordor */
+    margin: 0;
+    padding: 0;
+    color: #e2d3a1; /* Light gold font like the One Ring inscription */
+}
+
+/* Wrapper to center the content */
+#wrapper {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #2e2e2e; /* Deep gray for a stone-like look */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styling with background image */
+header {
+    background-image: url('header-bg-lotr.jpg'); /* Custom background, Lord of the Rings landscape */
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: padding-box;
+    height: 200px;
+    text-align: center;
+    color: #f1c232; /* Gold color, inspired by The One Ring */
+    padding-top: 50px;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Dramatic shadow like old script */
+}
+
+/* Style the unordered list to remove the bullets and adjust the layout */
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the list items horizontally */
+}
+
+nav ul li {
+    display: inline-block; /* Align items horizontally */
+    margin-right: 15px; /* Add spacing between items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2d3a1; /* Goldish color for the links */
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #3e3b31; /* Brownish-gray, like stone */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #ffffff; /* Bright white on hover for contrast */
+    background-color: #6c7573; /* Lighter stone-like gray for hover effect */
+}
+
+/* Main content styling */
+main {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #3e3b31; /* Earthy brown-gray, like a medieval setting */
+    color: #e2d3a1; /* Text in light golden hue */
+}
+
+main h2 {
+    font-size: 24px;
+    color: #f1c232; /* Golden title */
+    font-style: italic;
+}
+
+/* Figure and image styling */
+figure {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 300px;
+    border: 2px solid #f1c232; /* Golden border around the image */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1c1c1c; /* Same as the body background for cohesion */
+    color: #e2d3a1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 3px solid #f1c232; /* Golden accent in the footer */
+}
+
+/* Text properties */
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: justify;
+    color: #e2d3a1;
+}
+
+/* Box model adjustments */
+main, nav, footer {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+footer {
+    border-top: 3px solid #f1c232;
+}
+
+/* Pseudo-classes for hover on links */
+nav a:hover {
+    background-color: #6c7573;
+    color: #ffffff;
+}
+
+/* Adding box-shadow */
+#wrapper {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for a medieval, earthy look */
+}
