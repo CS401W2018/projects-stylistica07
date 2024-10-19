@@ -1,0 +1,77 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Flexbox container */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+/* Flexbox items */
+.item {
+    background-color: cadetblue;
+    padding: 5px 10px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
