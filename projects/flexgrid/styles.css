@@ -1,0 +1,104 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif; /* Cinzel gives a classic look */
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #f1c40f; /* Golden color */
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Navigation Bar Styling (Flex) */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 1rem;
+}
+
+nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    display: block; /* Block for Flexbox layout */
+    padding: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Container for Main Content and Sidebar (Flexbox) */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar (Aside) Styling */
+aside {
+    width: 25%;
+    background-color: #2c3e50;
+    color: #f1c40f;
+    padding: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+/* Main Content Area */
+main {
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Profile Cards Grid Layout */
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border: 2px solid #7f8c8d;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    color: #2c3e50;
+    font-family: 'Cinzel', serif;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #f1c40f;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 10px;
+}
