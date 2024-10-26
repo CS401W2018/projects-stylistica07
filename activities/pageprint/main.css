@@ -16,7 +16,7 @@ header h1 {
 
 
 nav {
-    display: flex;
+    display: block;
     background-color: cadetblue;
     justify-content: space-around;
 }
@@ -27,6 +27,11 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
+.row {
+    display: block;
+}
+
 
 nav a:hover {
     text-decoration: underline;
@@ -43,9 +48,33 @@ nav a:hover {
     width: 200px;
     border: 1px solid #000;
     box-shadow: 3px 3px 5px 3px rgba(50, 50, 50, 0.5);
-    margin: 10px;
 }
 
 .card img {
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+nav {
+    flex-direction: column;
+}
+
+nav a {
+    border-bottom: thin solid #fff;
+}
+
+.row {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    margin: auto 10px;
+}
+
+.maincard {
+    order: -1;
+}
+
 }
