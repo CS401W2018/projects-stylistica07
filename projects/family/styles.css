@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e1; /* Soft peach background */
+    color: #333333; /* Dark gray for readability */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #ff6f61; /* Warm coral color */
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-family: Georgia, serif; /* Warm font for header and footer */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6fb98f; /* Soft teal for nav background */
+    padding: 0.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif; /* Family-friendly font */
+    padding: 0.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    padding: 1em;
+    background-color: #f4f4f4;
+}
+
+.sidebar figure img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif; /* Friendly font for sidebar text */
+}
+
+.sidebar ul li {
+    padding: 0.5em 0;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+article {
+    width: 30%;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for family-friendly look */
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 1em 0;
+}
+
+article img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Responsive Styling */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+
+/* Print Styling */
+@media print {
+    nav, footer {
+        display: none;
+    }
+}
