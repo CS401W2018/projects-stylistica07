@@ -3,48 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms</title>
     <link rel="stylesheet" href="forms.css">
 </head>
 <body>
-    <header>
-        <h1>Web Design</h1>
-    </header>
+    <header><h1>Forms</h1></header>
     <main>
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit"> <br><br>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label> <br> <br>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label>
-          </form>
+        <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="firstNameInput">First Name: </label>
+                <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
+            </div>
+            <div class="form-row">
+                <label for="emailInput">Email: </label>
+                <input type="email" name="email" id="emailInput">
+            </div>
+            <div class="form-row">
+                <label for="dateInput">Birthdate: </label>
+                <input type="date" name="birthdate" id="dateInput">
+            </div>
+            <div class="form-row">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-row">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female" checked> Female</label>
+            </div>
+            <div class="form-row">
+                <label><input type="checkbox" name="agree" value="male" checked> I agree to the terms.</label>
+            </div>
+            <div class="form-row">
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="ca">California</option>
+                    <option value="hi" selected>Hawaii</option>
+                    <option value="ut">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit" value="Sign Up!">
+            </div>
+        </form>
     </main>
-
-    <h2>Engagemen Questions</h2>
+    <h2>Engagement Questions</h2>
     <p>
         <ul>
-            <li>The form tag has an "action" attribute. What does it do? -The "action" attribute in the <form> tag specifies the URL where the form's data will be sent when submitted.</li> <br>
-            <li>The form tag has a "method" attribute. What does it do? -The "method" attribute defines how the form data will be sent to the server, either by GET or POST.</li><br>
-            <li>What is the difference between a "POST" and a "GET"?/li> - "POST" is used to send data to a server, while "GET" is used to request data from a server.</li>
+            <li>The form tag has an "action" attribute. What does it do? -The "action" attribute in the <form> tag specifies the URL where the form's data will be sent when submitted.</li><br>
+            <li>The form tag has a "method" attribute. What does it do? The "method" attribute defines how the form data will be sent to the server, either by GET or POST.</li><br>
+            <li>What is the difference between a "POST" and a "GET"? -GET sends form data appended to the URL, making it visible in the browser’s address bar whilePOST sends form data within the HTTP request body, keeping it hidden from the URL and allowing for larger amounts of data</li>
         </ul>
     </p>
-
     <footer>
         <p>&copy; 2024 Charlie Noble</p>
     </footer>
-    
 </body>
 </html>
-
