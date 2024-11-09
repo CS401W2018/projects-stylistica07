@@ -10,57 +10,59 @@
     <header><h1>Forms</h1></header>
     <main>
         <form action="processing.html" method="post">
-            <div class="form-row">
-                <label for="firstNameInput">First Name: </label>
-                <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
-            </div>
-            <div>
-                <label for="lastNameInput">Last Name: </label>
-                <input type="text" name="lastName" id="lastNameInput" placeholder="Last Name">
-            </div>
-            <div class="form-row">
-                <label for="emailInput">Email: </label>
-                <input type="email" name="email" id="emailInput" placeholder="example@gmail.com">
-            </div>
-            <div class="form-row">
-                <label for="dateInput">Birthdate: </label>
-                <input type="date" name="birthdate" id="dateInput">
-            </div>
-            <div class="form-row">
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div class="form-row">
-                <label>Gender:</label>
-                <label><input type="radio" name="gender" value="male"> Male</label>
-                <label><input type="radio" name="gender" value="female" checked> Female</label>
-            </div>
-            <div class="form-row">
-                <label><input type="checkbox" name="agree" value="male" checked> I agree to the terms.</label>
-            </div>
-            <div class="form-row">
-                <label for="state">State: </label>
-                <select name="state" id="state">
-                    <option value="ca">California</option>
-                    <option value="hi" selected>Hawaii</option>
-                    <option value="ut">Utah</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label for="comment">Comment: </label>
-                <textarea name="comment" id="comment"></textarea>
-            </div>
-            <div class="form-row">
-                <input type="submit" value="Sign Up!">
-            </div>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <label for="firstNameInput">First Name: </label>
+                    <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lastNameInput">Last Name: </label>
+                    <input type="text" name="lastName" id="lastNameInput" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="emailInput">Email: </label>
+                    <input type="email" name="email" id="emailInput" placeholder="example@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="dateInput">Birthdate: </label>
+                    <input type="date" name="birthdate" id="dateInput">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="check-row">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female" checked> Female</label>
+                </div>
+                <div class="check-row">
+                    <label><input type="checkbox" name="agree" value="male" checked> I agree to the terms.</label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State: </label>
+                    <select name="state" id="state">
+                        <option value="ca">California</option>
+                        <option value="hi" selected>Hawaii</option>
+                        <option value="ut">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Sign Up!">
+                </div>
+            </fieldset>
         </form>
     </main>
     <h2>Engagement Questions</h2>
     <p>
         <ul>
-            <li>The form tag has an "action" attribute. What does it do? -The "action" attribute in the <form> tag specifies the URL where the form's data will be sent when submitted.</li><br>
-            <li>The form tag has a "method" attribute. What does it do? The "method" attribute defines how the form data will be sent to the server, either by GET or POST.</li><br>
-            <li>What is the difference between a "POST" and a "GET"? -GET sends form data appended to the URL, making it visible in the browser’s address bar whilePOST sends form data within the HTTP request body, keeping it hidden from the URL and allowing for larger amounts of data</li>
+            <li>What are different ways to style your form? -There are several ways to style a form, including using CSS Flexbox and CSS Grid for responsive layouts that adapt well to different screen sizes, and table layouts for a more rigid, but less modern structure. Elements like fieldsets, legends, placeholders, and labels improve organization and usability, while CSS pseudo-classes and JavaScript can add interactive effects, enhancing user experience. Frameworks like Bootstrap offer pre-built styles and responsive designs, making it easier to create polished forms quickly.</li><br>
+            <li>Why does the professor like to use flex? -Flex  allows for responsive layouts that automatically adjust to fit various screen sizes, making forms more user-friendly. Flexbox also offers powerful alignment and spacing controls, which simplify the layout process and reduce the need for extra code.</li>
         </ul>
     </p>
     <footer>
