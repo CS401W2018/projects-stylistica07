@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Register for the Fellowship</h1>
+    </header>
+    <main>
+        <form action="submit.html" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <!-- Textbox Field -->
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@middleearth.com" required>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="form-row">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                </div>
+
+                <!-- Date Field -->
+                <div class="form-row">
+                    <label for="dob">Birthdate:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <!-- Textarea Field -->
+                <div class="form-row">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about your journey"></textarea>
+                </div>
+
+                <!-- Checkbox Field -->
+                <div class="check-row">
+                    <label><input type="checkbox" name="agree" required> I agree to the code of the Fellowship</label>
+                </div>
+
+                <!-- Radio Button Field -->
+                <div class="check-row">
+                    <label>Race:</label>
+                    <label><input type="radio" name="race" value="human" required> Human</label>
+                    <label><input type="radio" name="race" value="elf"> Elf</label>
+                    <label><input type="radio" name="race" value="dwarf"> Dwarf</label>
+                    <label><input type="radio" name="race" value="hobbit"> Hobbit</label>
+                </div>
+
+                <!-- Select Box Field -->
+                <div class="form-row">
+                    <label for="location">Home Realm:</label>
+                    <select id="location" name="location">
+                        <option value="shire">The Shire</option>
+                        <option value="rivendell">Rivendell</option>
+                        <option value="mordor">Mordor</option>
+                        <option value="gondor">Gondor</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-row">
+                    <input type="submit" value="Join the Fellowship">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Charlie Noble</p>
+    </footer>
+</body>
+</html>
