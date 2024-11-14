@@ -9,7 +9,7 @@
 <body>
     <header><h1>Forms</h1></header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myform">
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-row">
@@ -25,8 +25,8 @@
                     <input type="email" name="email" id="emailInput" placeholder="example@gmail.com">
                 </div>
                 <div class="form-row">
-                    <label for="dateInput">Birthdate: </label>
-                    <input type="date" name="birthdate" id="dateInput">
+                    <label for="ageInput">Age: </label>
+                    <input type="number" name="age" id="ageInput" placeholder="Age">
                 </div>
                 <div class="form-row">
                     <label for="password">Password: </label>
@@ -38,7 +38,7 @@
                     <label><input type="radio" name="gender" value="female" checked> Female</label>
                 </div>
                 <div class="check-row">
-                    <label><input type="checkbox" name="agree" value="male" checked> I agree to the terms.</label>
+                    <label><input type="checkbox" name="agree" value="agree" checked> I agree to the terms.</label>
                 </div>
                 <div class="form-row">
                     <label for="state">State: </label>
@@ -68,5 +68,34 @@
     <footer>
         <p>&copy; 2024 Charlie Noble</p>
     </footer>
+
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstNameInput = document.getElementById('firstNameInput').value;
+            const lastNameInput = document.getElementById('lastNameInput').value;
+            const ageInput = document.getElementById('ageInput').value;
+
+            // Check if age is under 18
+            if (ageInput < 18) {
+                alert("You must be 18 and up.");
+                return;
+            }
+
+            const formData = {
+                firstName: firstNameInput,
+                lastName: lastNameInput,
+                age: ageInput,
+            };
+    
+            if (!firstNameInput || !lastNameInput) {
+                alert("Firstname and Lastname are required!");
+                return;
+            }
+
+            console.log(formData);
+            alert("You submitted the form!");
+        });
+    </script>
 </body>
 </html>
