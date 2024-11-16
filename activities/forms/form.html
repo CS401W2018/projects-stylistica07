@@ -9,6 +9,7 @@
 <body>
     <header><h1>Forms</h1></header>
     <main>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myform">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -72,33 +73,6 @@
         <p>&copy; 2024 Charlie Noble</p>
     </footer>
 
-    <script>
-        document.getElementById('myform').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const firstNameInput = document.getElementById('firstNameInput').value;
-            const lastNameInput = document.getElementById('lastNameInput').value;
-            const ageInput = document.getElementById('ageInput').value;
-
-            // Check if age is under 18
-            if (ageInput < 18) {
-                alert("You must be 18 and up.");
-                return;
-            }
-
-            const formData = {
-                firstName: firstNameInput,
-                lastName: lastNameInput,
-                age: ageInput,
-            };
-    
-            if (!firstNameInput || !lastNameInput) {
-                alert("Firstname and Lastname are required!");
-                return;
-            }
-
-            console.log(formData);
-            alert("You submitted the form!");
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
