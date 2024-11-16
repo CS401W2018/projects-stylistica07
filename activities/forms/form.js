@@ -1,14 +1,14 @@
 document.getElementById('myform').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Get form values
+    
     const firstName = document.getElementById('firstNameInput').value.trim();
     const lastName = document.getElementById('lastNameInput').value.trim();
     const age = document.getElementById('ageInput').value;
     const password = document.getElementById('password').value;
     const state = document.getElementById('state').value;
 
-    // Validation checks
+    
     if (!firstName || !lastName) {
         alert('First Name and Last Name are required.');
         return;
@@ -19,7 +19,7 @@ document.getElementById('myform').addEventListener('submit', function(event) {
         return;
     }
 
-    // Create form data object
+    
     const formData = {
         firstName: firstName,
         lastName: lastName,
@@ -28,7 +28,7 @@ document.getElementById('myform').addEventListener('submit', function(event) {
         state: state,
     };
 
-    // Send data to the server
+    
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -43,6 +43,6 @@ document.getElementById('myform').addEventListener('submit', function(event) {
     };
     xhr.send(JSON.stringify(formData));
 
-    // Log form data
+    
     console.log(formData);
 });
