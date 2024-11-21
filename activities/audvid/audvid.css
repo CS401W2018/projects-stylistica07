@@ -1,31 +1,30 @@
-/* audvid.css */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-  main {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  audio, video, iframe {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+audio, video, iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
