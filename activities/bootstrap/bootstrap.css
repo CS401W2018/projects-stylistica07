@@ -1,0 +1,56 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+
+.card {
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.btn-primary {
+    background-color: #0056b3;
+    border-color: #004494;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    border-color: #003366;
+}
+
+
+.badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+}
+
+
+.pagination .page-link {
+    color: #0056b3;
+}
+
+.pagination .page-link:hover {
+    color: #003366;
+    text-decoration: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #555;
+}
