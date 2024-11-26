@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9:
+    color: #333;
+}
+
+header {
+    background: #0066cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #005bb5;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #004799;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+article h3 {
+    margin-top: 10px;
+    color: #005bb5;
+}
+
+article p {
+    margin: 10px 0;
+}
+
+article p strong {
+    color: #005bb5; /* Highlight "History" text */
+    font-weight: bold;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #005bb5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004799;
+}
+
+table tr:hover {
+    background: #e6f2ff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #0066cc;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #005bb5;
+    color: white;
+}
+
+table td {
+    background: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        text-align: center;
+        padding: 15px;
+    }
+}
