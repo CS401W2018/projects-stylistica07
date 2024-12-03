@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Recipe</title>
+    <link rel="stylesheet" href="finalproject.css">
+</head>
+<body>
+    <header>
+        <h1>Culinary Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="festivals.html">Culinary Festivals</a></li>
+                <li><a href="table.html">Recipe Data</a></li>
+                <li><a href="form.html" class="active">Submit a Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Submit Your Favorite Recipe</h2>
+            <form action="process.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+                <label for="description">Recipe Description:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+                <button type="submit" class="button">Submit Recipe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Charlie Noble - Culinary Adventures. All rights reserved.</p>
+    </footer>
+</body>
+</html>
