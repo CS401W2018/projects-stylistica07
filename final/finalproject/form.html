@@ -16,13 +16,14 @@
                 <li><a href="festivals.html">Culinary Festivals</a></li>
                 <li><a href="table.html">Recipe Data</a></li>
                 <li><a href="form.html" class="active">Submit a Recipe</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Submit Your Favorite Recipe</h2>
-            <form action="process.php" method="POST">
+            <form id="recipeForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -33,10 +34,12 @@
                 <textarea id="description" name="description" rows="5" required></textarea>
                 <button type="submit" class="button">Submit Recipe</button>
             </form>
+            <div id="message"></div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Charlie Noble - Culinary Adventures. All rights reserved.</p>
     </footer>
+    <script src="form.js"></script>
 </body>
 </html>
